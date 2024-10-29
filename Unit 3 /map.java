@@ -14,20 +14,17 @@ public class map
 
           if (c.equals("n"))
             System.out.println("You walk towards the fountain and feel the fresh mist against your skin.");
-
           else if (c.equals("e"))
             System.out.println("You walk to the center of a cirle of statues. On each statue there is a bust and a description.");
-
           else if (c.equals("s"))
             System.out.println("You walk back to the entrance of the park and look out onto a block of apartment buildings. Your journey ends here.");
-          
           else if (c.equals("w"))
             System.out.println("You walk to a small playground. There is a set of swings, a slide, and a bench");
       }
       else if (command.equals("s"))
-      {
-          System.out.println("You walk home, your journey ends here.");
-      }
+      System.out.println("You walk home, your journey ends here.");
+
+      
       else if (command.equals("e"))
       {
           System.out.println("You walk down a path bordering a circle of staues to your left.");
@@ -40,9 +37,22 @@ public class map
           else if (o.equals("s"))
             System.out.println("You walk back to the entrance of the park.");
           else if (o.equals("w"))
+            System.out.println("You walk to the center of a circle of statues. On each statue there is a bust and a description.");
       }
       else if (command.equals("w"))
+      {
           System.out.println("You walk down a path bordering a small playground to your right.");
+          
+          String mm = scan.next();
+          if (mm.equals("n"))
+            System.out.println("You follow the winding path that leads to a fountain.System.err.println");
+          else if (mm.equals("e"))
+            System.out.println("You walk into the playground and sit on the bench. You listen to the birds chirping in the trees.");
+          else if (mm.equals("s"))
+            System.out.println("You walk back to the entrance of the park.");
+          else if (mm.equals("w"))
+            System.out.println("This is the edge of the Park, try another direction");
+    }
       // Add else-ifs for s, e, w, and an else for any other input. Be creative!
 
 
