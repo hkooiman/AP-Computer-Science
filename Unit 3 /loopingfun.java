@@ -1,5 +1,4 @@
 
-import java.util.stream.Stream;
 
 public class loopingfun
  {
@@ -7,7 +6,9 @@ public class loopingfun
   {
     printStars(5,2);
     printTriangle(6);
-    diceRoll();
+    diceRoll(); 
+    //jumble("glaze");
+     
 
 
   }
@@ -39,7 +40,7 @@ public static void printTriangle(int rows)
 
 public static void diceRoll()
 {
-  for (int count = 1; count <= 6; count++)
+  for (int count = 1; count <= 6; ++count)
   {
     for (int counts = 1; counts <= 6; counts++)
     {
@@ -49,14 +50,24 @@ public static void diceRoll()
   }
 }
 
-public static void jumble(String str);
+public static void jumble(String str)
 {
   String first = "";
-  for (int count = 0; count < str.length(); count++)
+  String second = "";
+  String thrid = "";
+  String fourth = "";
+
+  for (int l1 = 0; l1 < str.length(); l1++)
   {
-    for (int count = 0; count < str.length(); count++)
+    first = (str.substring(l1, l1 +1));
+    for (int l2 = 0; l2 < str.length(); l2++)
     {
-      
+      second =  str.substring(l2, l2 + 1);
+      if (!(first.equals(second)))
+      {
+        System.out.println(first + second);
+      }
+
     }
   }
 }
