@@ -39,17 +39,17 @@ public class Fraction {
 
 }
 
-class TesterClass
+class TestersClass
 {
     public static void main(String[] args)
-    {
+    { /* 
         Fraction f1 = new Fraction(2,3);
         System.out.println(f1);
         Fraction f2 = new Fraction(33,29);
         System.out.println(f2);
         System.out.println(f2.getDenomenator());
         System.out.println(Fraction.multiply(f1,f2));
-        System.out.println(f1.multiply(f2));
+        System.out.println(f1.multiply(f2)); */
 
 
 
