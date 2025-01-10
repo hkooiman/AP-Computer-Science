@@ -1,3 +1,5 @@
+
+
 /**
  * Celebrity base class for the Celebrity game.
  * @author cody.henrichsen
@@ -29,6 +31,13 @@ public class Celebrity
 
 	}
 
+	public Celebrity(String gAnswer, String gClue)
+	{
+        clue = gClue;
+        answer = gAnswer;
+
+	}
+
 	/**
 	 * Supplies the clue for the celebrity
 	 * @return
@@ -45,15 +54,7 @@ public class Celebrity
 	
 	}
 
-	public Celebrity chooseCelebrity()
-	{
-		int chooser = (int) Math.random() * 7
-		if (chooser > 3)
-		return c1;
-		else
-		return c2;
-	}
-
+	
 	/**
 	 * Supplies the answer for the celebrity.
 	 * @return
